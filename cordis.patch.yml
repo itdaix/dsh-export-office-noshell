@@ -1,0 +1,8 @@
+# dsh-export-office-noshell 的装载补丁。
+#
+# 只插入一行：把 export_docx_noshell / export_xlsx_noshell / export_pptx_noshell / export_pdf_noshell / export_image_noshell 五个工具注册进 host 的 `tools` 注册表。
+# 本插件不发布服务（没有对外消费者），所以不需要 isolate realm，也不改动任何出厂行。
+- insert:
+    - id: export-office-noshell
+      name: 'dsh-export-office-noshell'
+      disabled: true

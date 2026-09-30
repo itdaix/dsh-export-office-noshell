@@ -1,0 +1,17 @@
+{
+  "name": "dsh-export-office-noshell",
+  "version": "1.3.0",
+  "private": true,
+  "type": "module",
+  "description": "生成 Word / Excel / PowerPoint / PDF / 图片的工具集（export_docx_noshell / export_xlsx_noshell / export_pptx_noshell / export_pdf_noshell / export_image_noshell），零 npm 依赖；docx 与 PDF 可嵌图片，Excel 可嵌图片与原生图表，只落在工作区 .ai-output/ 目录。",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": ["dsh", "office", "export"]
+}
